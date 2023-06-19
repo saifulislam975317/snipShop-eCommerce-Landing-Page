@@ -7,5 +7,5 @@
 # from Google and youTube I got a lot solution many ways then I solved this problem.
 # sorry!!for that,  some dynamic logics remaining because I did not get enought time due to my academic examination hope you will consider this matter.
 # From starting day when you provided me this task.This task was some instructions like what I will do before starting the project, but I forgot that first initial 
-commit I did not commit on github. This is big mistake , please pardon me, hope you will consider this matter.
+# commit I did not commit on github. This is big mistake , please pardon me, hope you will consider this matter.
 # okay! Thank you so much for your valuable time.I hope to hear from you soon good news.
