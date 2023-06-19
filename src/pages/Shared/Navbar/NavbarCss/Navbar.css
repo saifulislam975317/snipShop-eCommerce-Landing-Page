@@ -1,3 +1,13 @@
 .navbarArea {
   background: #1e66ff;
 }
+
+.search-input {
+  position: relative;
+  display: flex;
+}
+.search-bar {
+  position: absolute;
+  right: 1px;
+  top: 16px;
+}

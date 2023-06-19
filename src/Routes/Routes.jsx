@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../pages/Home/Home";
-import Fashion from "../pages/Fashion/Fashion";
 import Categories from "../pages/Categories/Categories";
+import Orders from "../pages/Orders/Orders";
 
 const router = createBrowserRouter([
   {
@@ -13,14 +13,17 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
       },
-      {
-        path: "/",
-        element: <Fashion></Fashion>,
-      },
 
       {
         path: "/",
         element: <Categories></Categories>,
+      },
+      {
+        path: "/orders/:id",
+        loader: async ({ params }) => {
+          return fetch(`https://dummyjson.com/products/${params.id}`);
+        },
+        element: <Orders></Orders>,
       },
     ],
   },

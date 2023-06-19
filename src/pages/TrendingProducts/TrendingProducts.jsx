@@ -34,9 +34,6 @@ const TrendingProducts = ({ products, setProducts }) => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-7 gap-3">
-        {products.slice(10, 14).map((product) => (
-          <Fashion product={product} key={product}></Fashion>
-        ))}
         {filterProducts?.map((product) => (
           <Fashion product={product} key={product.id}></Fashion>
         ))}

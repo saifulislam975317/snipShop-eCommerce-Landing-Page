@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Category from "./Category/Category";
+import DetailsModal from "./DetailsModal/DetailsModal";
 
 const Categories = ({ products }) => {
+  const [details, setDetails] = useState([]);
   return (
     <div className="mt-24">
       <div className="p-5">
@@ -15,9 +17,14 @@ const Categories = ({ products }) => {
           products
             ?.slice(0, 9)
             .map((product) => (
-              <Category product={product} key={product.id}></Category>
+              <Category
+                product={product}
+                setDetails={setDetails}
+                key={product.id}
+              ></Category>
             ))}
       </div>
+      <DetailsModal details={details}></DetailsModal>
     </div>
   );
 };

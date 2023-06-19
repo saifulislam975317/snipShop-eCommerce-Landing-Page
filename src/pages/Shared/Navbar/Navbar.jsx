@@ -3,6 +3,9 @@ import "./NavbarCss/Navbar.css";
 import { FaUser } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { BiShoppingBag } from "react-icons/bi";
+import { Link } from "react-router-dom";
+import { BsSearch } from "react-icons/bs";
+
 const Navbar = () => {
   return (
     <div className="navbar navbarArea ">
@@ -28,12 +31,15 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <div className="form-control flex ">
+            <div className="form-control search-input  ">
               <input
                 type="text"
                 placeholder="Search"
                 className="input  input-bordered w-24 md:w-auto"
               />
+              <span className="search-bar">
+                <BsSearch></BsSearch>
+              </span>
             </div>
           </ul>
         </div>
@@ -50,25 +56,28 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <div className="form-control flex">
+          <div className="form-control search-input ">
             <input
               type="text"
               placeholder="Search"
-              className="input   input-bordered w-24 md:w-auto"
+              className="input   input-bordered lg:w-96 w-24 md:w-auto"
             />
+            <span className="search-bar">
+              <BsSearch></BsSearch>
+            </span>
           </div>
         </ul>
       </div>
       <div className="ml-10 text-white">
-        <a className="mr-5 flex items-center">
+        <Link to="/" className="mr-5 flex items-center">
           <FaUser className="mr-2"></FaUser>Account
-        </a>
-        <a className="mr-5 flex items-center">
+        </Link>
+        <Link to="/" className="mr-5 flex items-center">
           <FaHeart className="mr-2"></FaHeart>My items
-        </a>
-        <a href="">
+        </Link>
+        <Link to="/orders/24">
           <BiShoppingBag className="font-bold text-lg"></BiShoppingBag>
-        </a>
+        </Link>
       </div>
     </div>
   );

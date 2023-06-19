@@ -1,7 +1,8 @@
 import React from "react";
+import { BsPlusCircle } from "react-icons/bs";
+const Category = ({ product, setDetails }) => {
+  const { title, price, thumbnail } = product;
 
-const Category = (props) => {
-  const { title, price, thumbnail } = props.product;
   return (
     <div className="card card-compact w-96 bg-base-100 shadow-xl">
       <figure>
@@ -13,7 +14,21 @@ const Category = (props) => {
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
-        <p>Price: ${price}</p>
+        <span className="flex justify-evenly items-center">
+          <p>
+            ${price}
+            <span className="price-design text-decoration-line: line-through ml-4">
+              $60
+            </span>
+          </p>
+
+          <button onClick={() => window.detailsModal.showModal()}>
+            <BsPlusCircle
+              onClick={() => setDetails(product)}
+              className="font-bold text-2xl bg-slate-100 rounded-2xl"
+            ></BsPlusCircle>
+          </button>
+        </span>
       </div>
     </div>
   );
