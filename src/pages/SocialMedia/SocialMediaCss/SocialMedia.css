@@ -1,0 +1,26 @@
+.bg-socialMedia {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 500px;
+  padding: 35px;
+  background: rgba(255, 176, 130, 0.3);
+  border-radius: 30px;
+  position: relative;
+}
+.bg-socialMedia img {
+  width: 400px;
+  height: 400px;
+  margin-left: 30px;
+  margin-top: -65px;
+}
+.materialsThings {
+  position: absolute;
+  bottom: 40px;
+}
+.materialsThings img {
+  width: 139px;
+  height: 166px;
+  margin: 0px;
+  margin-right: 20px;
+}

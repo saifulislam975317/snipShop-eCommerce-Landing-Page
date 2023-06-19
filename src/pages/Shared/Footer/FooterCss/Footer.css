@@ -1,0 +1,21 @@
+.footerArea {
+  background: rgba(2, 63, 117, 0.9);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 431px;
+  margin-top: 103px;
+  color: white;
+}
+.privacyArea {
+  background: rgba(35, 35, 71, 1);
+  color: white;
+  height: 62px;
+}
+.privacyLink a {
+  margin: 20px;
+}
+.socialIcon svg {
+  margin-right: 20px;
+  font-size: large;
+  font-weight: 700;
+}

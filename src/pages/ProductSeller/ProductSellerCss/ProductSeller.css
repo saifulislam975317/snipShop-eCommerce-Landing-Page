@@ -1,0 +1,9 @@
+.product-seller {
+  background: rgba(206, 240, 255, 1);
+  border-radius: 20px;
+  width: 666px;
+  height: 598px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

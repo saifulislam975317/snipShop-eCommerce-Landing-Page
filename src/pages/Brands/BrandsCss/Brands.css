@@ -1,0 +1,11 @@
+.bg-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
+  padding: 35px;
+}
+.bg-banner img {
+  width: 100px;
+  height: 100px;
+}
