@@ -60,7 +60,7 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Search"
-              className="input   input-bordered lg:w-96 w-24 md:w-auto"
+              className="input   input-bordered lg:w-56 w-24 md:w-auto"
             />
             <span className="search-bar">
               <BsSearch></BsSearch>
@@ -69,6 +69,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="ml-10 text-white">
+        <Link className="mr-5" to="/">
+          Home
+        </Link>
+        <Link className="mr-5" to="/crud">
+          Crud
+        </Link>
         <Link to="/" className="mr-5 flex items-center">
           <FaUser className="mr-2"></FaUser>Account
         </Link>

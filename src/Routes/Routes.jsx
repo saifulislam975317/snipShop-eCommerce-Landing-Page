@@ -3,6 +3,9 @@ import Main from "../Layout/Main";
 import Home from "../pages/Home/Home";
 import Categories from "../pages/Categories/Categories";
 import Orders from "../pages/Orders/Orders";
+import Crud from "../pages/Crud/Crud";
+import AddProduct from "../pages/Crud/Crud/AddProduct/AddProduct";
+import UpdateProduct from "../pages/Crud/Crud/UpdateProduct/UpdateProduct";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +20,18 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Categories></Categories>,
+      },
+      {
+        path: "/crud",
+        element: <Crud></Crud>,
+      },
+      {
+        path: "/crud/addProduct",
+        element: <AddProduct></AddProduct>,
+      },
+      {
+        path: "/crud/updateProduct/:id",
+        element: <UpdateProduct></UpdateProduct>,
       },
       {
         path: "/orders/:id",

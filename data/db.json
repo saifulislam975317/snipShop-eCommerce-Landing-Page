@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "price": 965,
+      "title": "iPhone 9",
+      "brand": "Apple",
+      "category": "smartphones",
+      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ..."
+    },
+    {
+      "id": 3,
+      "title": "Huawei P41",
+      "brand": "Huawei Brand",
+      "price": "788"
+    },
+    {
+      "id": 4,
+      "price": 2500,
+      "title": "MacBook Pro",
+      "brand": "Apple",
+      "category": "Laptops",
+      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ..."
+    },
+    {
+      "id": "5",
+      "title": "Hp Laptop core i5",
+      "brand": "Hp",
+      "price": "65000"
+    }
+  ]
+}
